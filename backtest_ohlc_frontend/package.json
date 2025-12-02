@@ -1,0 +1,16 @@
+{
+  "name": "backtest-ohlc",
+  "private": true,
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "axios": "^1.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sonner": "^2.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}

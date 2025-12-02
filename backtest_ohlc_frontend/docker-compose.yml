@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  daily_chart:
+    # image: daily_chart_frontend:latest
+    container_name: backtest_ohlc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8989:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
