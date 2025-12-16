@@ -450,7 +450,7 @@ export default function TVChart() {
             timezone: "Asia/Kolkata",
             exchange: "NSE",
             minmov: 1,
-            pricescale: isStock ? 1 : 100,
+            pricescale: 100,
             has_intraday: true,
             has_daily: true,
             has_weekly_and_monthly: true,
